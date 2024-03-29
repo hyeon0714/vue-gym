@@ -60,21 +60,26 @@ export default {
         idCheck() {
             let id = this.memberVo.id
             console.log(id)
-            axios({
-                method: 'post', // put, post, delete 
-                url: 'http://localhost:8889/api/membercheck',
-                headers: { "Content-Type": "application/json; charset=utf-8" }, //전송타입
-                //params: guestbookVo, //get방식 파라미터로 값이 전달
-                data: this.memberVo, //put, post, delete 방식 자동으로 JSON으로 변환 전달
-                responseType: 'json' //수신타입
-            }).then(response => {
-                console.log(response); //수신데이타
+            if (this.memberVo.id == "") {
+                alert("아이디를 입력해주세요")
+            } else {
+                axios({
+                    method: 'post', // put, post, delete 
+                    url: 'http://localhost:8889/api/membercheck',
+                    headers: { "Content-Type": "application/json; charset=utf-8" }, //전송타입
+                    //params: guestbookVo, //get방식 파라미터로 값이 전달
+                    data: this.memberVo, //put, post, delete 방식 자동으로 JSON으로 변환 전달
+                    responseType: 'json' //수신타입
+                }).then(response => {
+                    console.log(response); //수신데이타
 
 
-                this.a = 1;
-            }).catch(error => {
-                console.log(error);
-            });
+                    this.a = 1;
+                }).catch(error => {
+                    console.log(error);
+                });
+            }
+
         },
         join() {
             if (this.a != 1) {
