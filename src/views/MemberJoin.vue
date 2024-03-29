@@ -1,36 +1,39 @@
 <template>
     <div>
-        <form v-on:submit.prevent="join" action="">
-            <label for="">아아디</label>
-            <input type="text" v-model="memberVo.id">
-            <button v-on:click="idCheck" type="button">중복체크</button><br>
-            <label for="">비밀번호</label>
-            <input type="text" v-model="memberVo.password"><br>
-            <label for="">이름</label>
-            <input type="text" v-model="memberVo.name"><br>
-            <label for="">주소</label>
-            <input type="text" v-model="memberVo.address"><br>
-            <label for="">성별</label>
-            <input type="text" v-model="memberVo.gender"><br>
-            <label for="">번호</label>
-            <input type="text" placeholder="-없이 입력해주세요" v-model="memberVo.hp"><br>
-            <label for="">나이</label>
-            <input type="text" v-model="memberVo.age"><br>
-            <label for="">등록일수</label><br>
-            <label for="30"> 30일 </label>
-            <input type="radio" name="regiDay" id="30" value="30" v-model="memberVo.regiDay">
-            <label for="90"> 90일 </label>
-            <input type="radio" name="regiDay" id="90" value="90" v-model="memberVo.regiDay">
-            <label for="180"> 180일 </label>
-            <input type="radio" name="regiDay" id="180" value="180" v-model="memberVo.regiDay">
-            <label for="360"> 360일 </label>
-            <input type="radio" name="regiDay" id="360" value="360" v-model="memberVo.regiDay">
-            <br><br><br>
-            <button type="submit">회원가입</button>
+        <h1>
+            회원가입
+        </h1>
 
-
-
-        </form>
+        <div>
+            <form v-on:submit.prevent="join" action="">
+                <label for="">아아디</label>
+                <input type="text" v-model="memberVo.id">
+                <button v-on:click="idCheck" type="button">중복체크</button><br>
+                <label for="">비밀번호</label>
+                <input type="text" v-model="memberVo.password"><br>
+                <label for="">이름</label>
+                <input type="text" v-model="memberVo.name"><br>
+                <label for="">주소</label>
+                <input type="text" v-model="memberVo.address"><br>
+                <label for="">성별</label>
+                <input type="text" v-model="memberVo.gender"><br>
+                <label for="">번호</label>
+                <input type="text" placeholder="-없이 입력해주세요" v-model="memberVo.hp"><br>
+                <label for="">나이</label>
+                <input type="text" v-model="memberVo.age"><br>
+                <label for="">등록일수</label><br>
+                <label for="30"> 30일 </label>
+                <input type="radio" name="regiDay" id="30" value="30" v-model="memberVo.regiDay">
+                <label for="90"> 90일 </label>
+                <input type="radio" name="regiDay" id="90" value="90" v-model="memberVo.regiDay">
+                <label for="180"> 180일 </label>
+                <input type="radio" name="regiDay" id="180" value="180" v-model="memberVo.regiDay">
+                <label for="360"> 360일 </label>
+                <input type="radio" name="regiDay" id="360" value="360" v-model="memberVo.regiDay">
+                <br><br><br>
+                <button type="submit">회원가입</button>
+            </form>
+        </div>
     </div>
 </template>
 <script>
