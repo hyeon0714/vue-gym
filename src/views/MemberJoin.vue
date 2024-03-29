@@ -16,7 +16,11 @@
                 <label for="">주소</label>
                 <input type="text" v-model="memberVo.address"><br>
                 <label for="">성별</label>
-                <input type="text" v-model="memberVo.gender"><br>
+                <label for="male">남자</label>
+                <input type="radio" id="male" value="남자" v-model="memberVo.gender">
+                <label for="female">여자</label>
+                <input type="radio" id="female" value="여자" v-model="memberVo.gender">
+                <br>
                 <label for="">번호</label>
                 <input type="text" placeholder="-없이 입력해주세요" v-model="memberVo.hp"><br>
                 <label for="">나이</label>
