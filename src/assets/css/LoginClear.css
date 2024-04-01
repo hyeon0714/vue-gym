@@ -1,0 +1,250 @@
+/*강사 로그인*/
+#back{
+    width: 1125px;
+    height: 2436px;
+    background-color: #313131;
+    font-family: "VITRO CORE TTF";
+    text-align: center;
+}
+#back2{
+    width: 1064.99px;
+    height: 1740px;
+    background-color: #ffffff;
+    border: 30px #ff0066 solid;
+    border-radius: 0px 0px 80px 80px;
+}
+#fir{
+    font-size: 80px;
+    margin-bottom: 50px;
+    color: #313131;
+    font-style: italic;
+    padding-right: 280px;
+}
+#fir>.na{
+    font-size: 130px;
+    color: #ff0066;
+}
+#sec{
+    font-size: 130px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    color: #313131;
+}
+
+#pi{
+    width: 350px;
+    height: 350px;
+    border: 10px #ff0066 solid;
+    border-radius: 30px 30px 30px 30px;
+    margin-bottom: 40px;
+}
+#allcount{
+    font-size: 60px;
+    width: 600px;
+    height: 49px;
+    color: #313131;
+}
+#sercount{
+    font-size: 70px;
+    font-family: "VITRO INSPIRE TTF";
+    width: 173.59 px;
+    color: #ff0066;
+}
+#count{
+    padding-left: 60px;
+    padding-bottom: 80px;
+}
+
+#box33{
+    width: 285px;
+    height: 284px;
+    background-color: #ff0066;
+    border-style: none;
+    margin-right: 50px;
+    border-radius: 30px;
+    font-size: 60px;
+    font-family: "VITRO CORE TTF";
+    color: #ffffff;
+}
+#box34{
+    width: 285px;
+    height: 284px;
+    background-color: #ff0066;
+    border-radius: 30px;
+    border-style: none;
+    font-size: 60px;
+    font-family: "VITRO CORE TTF";
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+#box35{
+    width: 463px;
+    height: 125px;
+    background-color: #ff0066;
+    border-radius: 20px;
+    border-style: none;
+    font-family: "VITRO CORE TTF";
+    font-size: 60px;
+    color: #ffffff;
+    margin-right: 25px;
+
+}
+#box36{
+    width: 463px;
+    height: 125px;
+    background-color: #ff0066;
+    border-radius: 20px;
+    border-style: none;
+    font-family: "VITRO CORE TTF";
+    font-size: 60px;
+    color: #ffffff;
+
+}
+#boxbox{
+    margin-top: 30px;
+}
+#can{
+    width: 375px;
+    height: 375px;
+}
+#cccc{
+    font-family: "VITRO CORE TTF";
+    font-size: 60px;
+    color: #ff0066;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-style: italic;
+}
+#mmmm{
+    font-family: "VITRO PRIDE TTF";
+    font-size: 50px;
+    color: #ff0066;
+    margin-top: 20px;
+}
+
+/*멤버 로그인*/
+#oooo{
+    height: 683px;
+}
+#tttt{
+    font-size: 60px;
+    font-family: "VITRO CORE TTF";
+    color: #313131;
+    padding-top: 60px;
+    width: 450px;
+}
+#yyyy{
+    font-size: 70px;
+    font-family: "VITRO INSPIRE TTF";
+    color: #ff0066;
+    padding-top: 60px;
+}
+#qqqq{
+    margin-left: 80px;
+}
+#box37{
+    width: 940px;
+    height: 125px;
+    background-color: #ff0066;
+    border-radius: 20px;
+    border-style: none;
+    font-family: "VITRO CORE TTF";
+    font-size: 60px;
+    color: #ffffff;
+}
+
+/*memberList1*/
+#listoooo{
+    width: 1125px;
+    height: 2436px;
+    background-color: #313131;
+    text-align: center;
+}
+#listiiii{
+    padding-top: 50px;
+    font-size: 150px;
+    font-family: "VITRO CORE TTF";
+    color: #ff0066;
+    margin: 0;
+    font-style: italic;
+}
+#Me{
+    font-size: 100px;
+    font-family: "VITRO CORE TTF";
+    color: #ffffff;
+}
+#Me2{
+    font-size: 130px;
+    color: #ff0066;
+    font-style: italic;
+}
+#phonen{
+    font-size: 60px;
+    font-family: "VITRO CORE TTF";
+    color: #ffffff;
+}
+#bback{
+    background-color: #ffffff;
+    margin-left: 100px;
+    width: 920px;
+    height: 300px;
+    text-align: left;
+}
+#co1{
+    padding-left: 15px;
+    padding-top: 15px;
+    margin-bottom: 15px;
+    padding-right: 15px;
+    font-size: 50px;
+    font-family: "VITRO CORE TTF";
+    color: #313131;
+}
+#co2{
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 60px;
+    font-size: 50px;
+    font-family: "VITRO PRIDE TTF";
+    margin: 0;
+}
+#com1{
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+    background-color: #ff0066;
+    border: none;
+    font-size: 50px;
+    font-family: "VITRO CORE TTF";
+    color: #ffffff;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+#tab1{
+    background-color: #ffffff;
+    width: 920px;
+    height: 400px;
+    margin-left: 100px;
+}
+#tab2{
+    font-size: 40px;
+    font-family: "VITRO CORE TTF";
+    color: #313131;
+    text-align: left;
+    padding-left: 20px;
+    height: 36px;
+    border-bottom: 1px solid #444444;
+    
+}
+#tab3{
+    font-size: 50px;
+    font-family: "VITRO PRIDE TTF";
+    color: #313131;
+    padding-right: 50px;
+    height: 64px;
+    border-bottom: 1px solid #444444;
+    
+}
+#bline {
+    border-bottom: 1px solid #444444;
+    padding: 10px;
+  }
