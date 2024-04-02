@@ -8,10 +8,29 @@
 }
 #back2{
     width: 1064.99px;
+    height: 2040px;
+    background-color: #ffffff;
+    border: 30px #ff0066 solid;
+    border-radius: 0px 0px 80px 80px;
+}
+#back3{
+    width: 1064.99px;
     height: 1740px;
     background-color: #ffffff;
     border: 30px #ff0066 solid;
     border-radius: 0px 0px 80px 80px;
+}
+#can{
+    width: 375px;
+    height: 375px;
+}
+#cccc1{
+    font-family: "VITRO CORE TTF";
+    font-size: 60px;
+    color: #ff0066;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    font-style: italic;
 }
 #fir{
     font-size: 80px;
@@ -103,16 +122,12 @@
 #boxbox{
     margin-top: 30px;
 }
-#can{
-    width: 375px;
-    height: 375px;
-}
 #cccc{
     font-family: "VITRO CORE TTF";
     font-size: 60px;
     color: #ff0066;
     margin-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 70px;
     font-style: italic;
 }
 #mmmm{
@@ -139,6 +154,69 @@
     color: #ff0066;
     padding-top: 60px;
 }
+.yyyt{
+    padding-left: 50px;
+}
+#tkdtp{
+    font-size: 55px;
+    font-family: "VITRO INSPIRE TTF";
+    width: 200px;
+    height: 100px;
+    border: none;
+    color: #ffffff;
+    background-color: #ff0066;
+    border-radius: 15px;
+    margin-left: 30px;
+}
+.box99{
+    width: 1063px;
+    height: 300px;
+}
+.clearfix:before, .clearfix:after {
+    display: block;
+    content: '';
+    line-height: 0;
+}
+
+.clearfix:after {
+    clear:both;
+}
+
+#dlqtlf{
+    width: 275px;
+    height: 275px;
+    border: none;
+    color: #ffffff;
+    background-color: #ff0066;
+    font-family: "VITRO CORE TTF";
+    font-size: 90px;
+    border-radius: 30px;
+    float: left;
+    margin-left: 60px;
+}
+#xpdlqmf{
+    float: right;
+    font-family: "VITRO INSPIRE TTF";
+    font-size: 60px;
+    margin-right: 100px;
+}
+#t1{
+    width: 191px;
+    height: 96px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-right: 40px;
+}
+
+#t2{
+    width: 311px;
+    height: 96px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    color: #ff0066;
+    
+}
+
 #qqqq{
     margin-left: 80px;
 }
@@ -153,98 +231,33 @@
     color: #ffffff;
 }
 
-/*memberList1*/
-#listoooo{
-    width: 1125px;
-    height: 2436px;
-    background-color: #313131;
+/* 게시판 페이징 */
+#paging {
+	margin: 0px auto;
+	width: 310px;
+}
+
+#paging ul {margin: 10px 5px 10px 5px;}
+#paging ul>li{
+	float: left;
+	margin: 0px 8px 0px 8px;
+}
+
+/*관리페이지*/
+#manager{
+    width: 1000px;
     text-align: center;
+    margin: auto;
 }
-#listiiii{
-    padding-top: 50px;
-    font-size: 150px;
-    font-family: "VITRO CORE TTF";
-    color: #ff0066;
-    margin: 0;
-    font-style: italic;
-}
-#Me{
-    font-size: 100px;
-    font-family: "VITRO CORE TTF";
-    color: #ffffff;
-}
-#Me2{
-    font-size: 130px;
-    color: #ff0066;
-    font-style: italic;
-}
-#phonen{
-    font-size: 60px;
-    font-family: "VITRO CORE TTF";
-    color: #ffffff;
-}
-#bback{
-    background-color: #ffffff;
-    margin-left: 100px;
-    width: 920px;
-    height: 300px;
-    text-align: left;
-}
-#co1{
-    padding-left: 15px;
-    padding-top: 15px;
-    margin-bottom: 15px;
-    padding-right: 15px;
-    font-size: 50px;
-    font-family: "VITRO CORE TTF";
-    color: #313131;
-}
-#co2{
-    padding-left: 15px;
-    padding-right: 15px;
-    font-size: 60px;
-    font-size: 50px;
-    font-family: "VITRO PRIDE TTF";
-    margin: 0;
-}
-#com1{
+
+#managerinfo{
+    float:left;
     width: 200px;
-    height: 100px;
-    border-radius: 20px;
-    background-color: #ff0066;
-    border: none;
-    font-size: 50px;
-    font-family: "VITRO CORE TTF";
-    color: #ffffff;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    height: 1000px;
 }
-#tab1{
-    background-color: #ffffff;
-    width: 920px;
-    height: 400px;
-    margin-left: 100px;
-}
-#tab2{
-    font-size: 40px;
-    font-family: "VITRO CORE TTF";
-    color: #313131;
-    text-align: left;
-    padding-left: 20px;
-    height: 36px;
-    border-bottom: 1px solid #444444;
-    
-}
-#tab3{
-    font-size: 50px;
-    font-family: "VITRO PRIDE TTF";
-    color: #313131;
-    padding-right: 50px;
-    height: 64px;
-    border-bottom: 1px solid #444444;
-    
-}
-#bline {
-    border-bottom: 1px solid #444444;
-    padding: 10px;
-  }
+
+#minfo{
+    float:right;
+    width: 799px;
+    height: 1000px;
+}   

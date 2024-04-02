@@ -1,4 +1,3 @@
-
 <template>
     <div>
         <table border="1">

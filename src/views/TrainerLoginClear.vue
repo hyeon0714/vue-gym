@@ -1,6 +1,6 @@
 <template>
     <div id="back">
-        <div id="back2">
+        <div id="back3">
             <div>
                 <h1 id="fir"><strong class="na">박종희</strong> 강사님,</h1>
                 <h1 id="sec">안녕하세요!</h1>
@@ -33,7 +33,7 @@
             <img id="can">
         </div>
         <div>
-            <p id="cccc">CodeCrafters</p>
+            <p id="cccc1">CodeCrafters</p>
             <p id="mmmm">copyright(c) all rights Reserved.</p>
         </div>
 
