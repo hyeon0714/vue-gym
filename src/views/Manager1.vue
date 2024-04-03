@@ -29,7 +29,7 @@
                         </thead>
                         <tbody>
                             <tr v-bind:key="i" v-for="(v,i) in managerVo1">
-                                <td>{{v.name}}</td>
+                                <td><RouterLink >{{v.name}}</RouterLink></td>
                                 <td>{{v.hp}}</td>
                                 <td>{{v.period}}개월</td>
                                 <td>{{v.approval}}</td>
@@ -44,12 +44,9 @@
                 </div>
                 <div id="paging">
                     <ul>
-                        <li><a href="">◀</a></li>
-                        <li><a href="">1</a></li>
-                        <li><a href="">2</a></li>
-                        <li><a href="">3</a></li>
-                        <li><a href="">4</a></li>
-                        <li><a href="">▶</a></li>
+                        <li v-bind:key="i" v-for="(e,i) in endNo">
+                            <a v-on:click.prevent="list(i+1)" href="">{{ i+1 }}</a>
+                        </li>
                     </ul>
 
                 </div>
@@ -69,11 +66,13 @@ export default {
             util:{
                 page: 1,
                 keyword: ""
-            }
+            },
+            endNo:""
         }
     },
     methods: {
-        list() {
+        list(page) {
+            this.util.page=page;
             console.log(this.util)
             axios({
                 method: 'post', // put, post, delete 
@@ -86,14 +85,16 @@ export default {
                 console.log(response.data); //수신데이타
                 this.managerVo1 = response.data.list
                 console.log(this.managerVo1)
+                this.endNo = response.data.endPageBtnNo
             }).catch(error => {
                 console.log(error);
             });
 
-        }
+        },
+        
     },
     created(){
-        this.list();
+        this.list(1);
     }
 }
 </script>
