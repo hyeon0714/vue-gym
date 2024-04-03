@@ -28,16 +28,16 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>김재현</td>
-                                <td>010-9999-9999</td>
-                                <td>3개월</td>
-                                <td>등록</td>
-                                <td>0000-00-00</td>
-                                <td>55</td>
-                                <td>김재현</td>
-                                <td>10회</td>
-                                <td>8회</td>
+                            <tr v-bind:key="i" v-for="(v,i) in managerVo1">
+                                <td>{{v.name}}</td>
+                                <td>{{v.hp}}</td>
+                                <td>{{v.period}}개월</td>
+                                <td>{{v.approval}}</td>
+                                <td>{{v.deadline}}</td>
+                                <td>{{v.lockerNo}}</td>
+                                <td>{{v.tName}}</td>
+                                <td>{{v.ptTotal}}</td>
+                                <td>{{v.ptCount}}</td>
                             </tr>
                         </tbody>
                     </table>
@@ -58,13 +58,42 @@
     </div>
 </template>
 <script>
+import axios from 'axios';
+
 export default {
     name: 'ManaGer',
     components: {},
     data() {
         return {
+            managerVo1:[],
+            util:{
+                page: 1,
+                keyword: ""
+            }
+        }
+    },
+    methods: {
+        list() {
+            console.log(this.util)
+            axios({
+                method: 'post', // put, post, delete 
+                url: 'http://localhost:8889/api/gym/manager',
+                headers: { "Content-Type": "application/json; charset=utf-8" }, //전송타입
+                //params: guestbookVo, //get방식 파라미터로 값이 전달
+                data: this.util, //put, post, delete 방식 자동으로 JSON으로 변환 전달
+                responseType: 'json' //수신타입
+            }).then(response => {
+                console.log(response.data); //수신데이타
+                this.managerVo1 = response.data.list
+                console.log(this.managerVo1)
+            }).catch(error => {
+                console.log(error);
+            });
 
         }
+    },
+    created(){
+        this.list();
     }
 }
 </script>
