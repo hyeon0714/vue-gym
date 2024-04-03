@@ -29,7 +29,7 @@
                         </thead>
                         <tbody>
                             <tr v-bind:key="i" v-for="(v,i) in managerVo1">
-                                <td><RouterLink >{{v.name}}</RouterLink></td>
+                                <td><RouterLink :to="`/manager2?no=${v.no}`">{{v.name}}</RouterLink></td>
                                 <td>{{v.hp}}</td>
                                 <td>{{v.period}}개월</td>
                                 <td>{{v.approval}}</td>
