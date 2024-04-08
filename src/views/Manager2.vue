@@ -85,7 +85,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr v-bind:key="i" v-for="(g,i) in this.generalList">
+                            <tr v-bind:key="i" v-for="(g, i) in this.generalList">
                                 <td>{{ g.regDate }}</td>
                                 <td>{{ g.deadLine }}</td>
                             </tr>
@@ -114,18 +114,18 @@ export default {
                 approval: "",
                 lockerNo: ""
             },
-            generalVo:{
-                regDate:"",
-                deadLine:"",
-                price:""
+            generalVo: {
+                regDate: "",
+                deadLine: "",
+                price: ""
             },
-            ptVo:{
-                ptTotal:"",
-                ptCount:""
+            ptVo: {
+                ptTotal: "",
+                ptCount: ""
             },
-            attendList:[],
-            lessonList:[],
-            generalList:[]
+            attendList: [],
+            lessonList: [],
+            generalList: []
         }
     },
     methods: {
@@ -147,6 +147,7 @@ export default {
                 responseType: 'json' //수신타입
             }).then(response => {
                 console.log(response.data); //수신데이타
+                
                 this.memberVo = response.data.mv
                 this.generalVo = response.data.gv
                 this.ptVo = response.data.pv
@@ -165,4 +166,5 @@ export default {
         this.member1();
     }
 }
+
 </script>

@@ -4,6 +4,7 @@ import TrainerLoginSuccess from '../views/TrainerLoginSuccess.vue'
 import TrainerJoinForm from '../views/TrainerJoinForm.vue'
 import TrainerLoginView from '../views/TrainerLoginView.vue'
 import TrainerIntroductionView from '../views/TrainerIntroductionView.vue'
+import MyMemberListView from '../views/MyMemberListView.vue'
 import LoginClear from '@/views/TrainerLoginClear.vue'
 import Login from '../views/MemberLoginClear.vue'
 import Manager1 from '../views/Manager1.vue'
@@ -16,6 +17,11 @@ const routes = [
     path: '/memberjoin',
     name: 'memberjoin',
     component: MemberJoin
+  },
+  {
+    path: '/trainer/list',
+    name: 'mylist',
+    component: MyMemberListView
   },
   {
     path: '/gym/tls',
